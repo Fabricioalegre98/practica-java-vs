@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class Operadores{
     
     public static void main(String args[]){
+        // Instancia de Scanner para leer datos del usuario
         Scanner entrada = new Scanner(System.in);
        
+        // Variables para almacenar los datos del trabajador
         String nombre = "";
        int clave = 0, antiguedad = 0;
        
@@ -55,4 +57,3 @@ public class Operadores{
         }
     }
 }
-
