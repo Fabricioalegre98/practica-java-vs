@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Switch{
     public static void main(String args[]){
         Scanner entrada = new Scanner(System.in);
-        String nombre = "";
+        
         int NumUno = 0, NumDos = 0, resultado = 0;
         int parametro = resultado;
         
