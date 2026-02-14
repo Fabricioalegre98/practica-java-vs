@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Arreglos {
 
-    public static void main(String[]args){
+    public static void main(String[] args){
 
         //declaramos un entero llamado longitud y una nueva entrada de scanner
         int longitud = 0;
