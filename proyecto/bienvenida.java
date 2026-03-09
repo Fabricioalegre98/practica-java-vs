@@ -16,14 +16,14 @@ public class bienvenida extends JFrame implements ActionListener {
         getContentPane().setBackground(new Color (255,0,0) );
         setIconImage(new ImageIcon(getClass().getResource("images/icon.png")).getImage());//coloca la imagen en el icono de la interfaz grafica
 
-        ImageIcon imagen = new ImageIcon("images/logo-coca.png");//creamos el objeto imagen 
+        ImageIcon imagen = new ImageIcon("proyecto/images/logo-coca.png");//creamos el objeto imagen 
         label1 = new JLabel(imagen);
         label1.setBounds(25,15,300,150);
         add(label1);
 
         label2 = new JLabel("Sistema de Control Vacacional");
-        label2.setBounds(35,135,130,30);
-        label2.setFont(new Font("Andale Mono", 3, 18));
+        label2.setBounds(35,135,230,30);
+        label2.setFont(new Font("Andale Mono", 3, 14));
         label2.setForeground(new Color(255,255,255));
         add(label2);
 
@@ -45,6 +45,27 @@ public class bienvenida extends JFrame implements ActionListener {
         textfield1.setFont(new Font("Andale Mono",1, 14));
         textfield1.setForeground(new Color(255,0,0));  
         add(textfield1);
+
+        boton1 = new JButton("Ingresar");
+        boton1.setBounds(125,280,100,30);
+        boton1.setBackground(new Color(255,255,255));
+        boton1.setFont(new Font("Andale Mono", 1,14));
+        boton1.setForeground(new Color(255,0,0));
+        add(boton1);
+        boton1.addActionListener(this);
     }
-    
+
+    public void actionPerformed(ActionEvent e){
+        if(e.getSource() == boton1){
+
+        }
+    } 
+
+    public static void main(String[]args){
+        bienvenida ventanaBienvenida = new bienvenida();
+        ventanaBienvenida.setBounds(0,0,350,450);
+        ventanaBienvenida.setVisible(true);
+        ventanaBienvenida.setResizable(false);
+        ventanaBienvenida.setLocationRelativeTo(null);
+    }
 }
