@@ -1,0 +1,2 @@
+ID: C2 - Costo Operativo: 800.0
+ID: B2 - Costo Operativo: 40.0
